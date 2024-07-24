@@ -1,7 +1,7 @@
 Welcome to XAI-DESReg documentation!
 ===================================
 
-XAI-DESReg is an open-source library focusing on implementing state-of-the-art techniques for dynamic regressor and ensemble selection. This project is under active development. Contributions are welcomed through its GitHub page: https://github.com/adv-panda/infodesreg
+XAI-DESReg is an open-source library focusing on implementing state-of-the-art techniques for dynamic regressor and ensemble selection. This project is under active development. Contributions are welcomed through its GitHub page: https://github.com/adv-panda/xai-desreg
 
 .. note::
 
