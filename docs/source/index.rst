@@ -1,13 +1,7 @@
-Welcome to Lumache's documentation!
+Welcome to XAI-DESReg documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+XAI-DESReg is an open-source library focusing on implementing state-of-the-art techniques for dynamic regressor and ensemble selection. This project is under active development. Contributions are welcomed through its GitHub page: https://github.com/adv-panda/infodesreg
 
 .. note::
 
@@ -19,4 +13,27 @@ Contents
 .. toctree::
 
    usage
+   introduction
    api
+   example
+
+Example 
+-------- 
+
+.. code-block:: python  
+
+   from xaidesreg.des import DES  
+   
+   pool_regressors = [regressor1, ..., regressorN]
+   
+   # Initialize the DS model
+   des = DES(pool_regressors)
+   
+   # Fit the dynamic selection model
+   des.fit(X_dsel, y_dsel) 
+   
+   # Predict new examples
+   des.predict(X_test)
+   
+   # Check performance (based on MSE)
+   des.score(X_test, y_test) 
